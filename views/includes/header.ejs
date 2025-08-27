@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+</head>
+
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><a href="#home"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                        viewBox="0 -960 960 960" width="24">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/project">PROJECT</a></li>
+            <li><a href="/resume">RESUME</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100055573969849&sk=about_contact_and_basic_info" target="_blank">CONTACT</a></li>
+            <li><a href="/about">ABOUT</a></li>
+        </ul>
+        <ul>
+            <div><img src="logo.jpg" alt=""></div>
+            <li class="hideonmobile-logo"><a href="/myprofile">My Profile</a></li>
+            <li class="hideonmobile"><a href="/">HOME</a></li>
+            <li class="hideonmobile"><a href="/project">PROJECT</a></li>
+            <li class="hideonmobile"><a href="https://www.facebook.com/profile.php?id=100055573969849&sk=about_contact_and_basic_info" target="_blank">CONTACT</a></li>
+            <li class="hideonmobile"><a href="/resume">RESUME</a></li>
+            <li class="hideonmobile"><a href="/about">ABOUT</a></li>
+            <li class="menu-button" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="24" viewBox="0 -960 960 960" width="24">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
