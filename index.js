@@ -27,7 +27,3 @@ app.get("/resume", (req, res) => {
 app.get("/project", (req, res) => {
     res.render("project.ejs");
 });
-
-app.get("/index", (req, res) => {
-    res.render("index.html");
-});
