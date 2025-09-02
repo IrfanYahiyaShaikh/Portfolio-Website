@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+app.engine('html', require('ejs').renderFile);
+
 
 let port = 8080;
 
@@ -13,17 +15,17 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
 
 app.get("/", (req, res) => {
-    res.render("index.ejs");
+    res.render("index.html");
 });
 
 app.get("/about", (req, res) => {
-    res.render("about.ejs");
+    res.render("about.html");
 });
 
 app.get("/resume", (req, res) => {
-    res.render("resume.ejs");
+    res.render("resume.html");
 });
 
 app.get("/project", (req, res) => {
-    res.render("project.ejs");
+    res.render("project.html");
 });
