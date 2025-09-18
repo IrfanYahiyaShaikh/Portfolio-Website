@@ -12,7 +12,6 @@
         body {
             min-height: 100vh;
             display: block;
-            background-image: url(./background-tree-book-wallpaper-preview.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -168,7 +167,6 @@
             margin-top: 150px;
         }
         p{
-            text-align: center;
             display: flex;
             justify-content: center;
             color: #f0f0f0;

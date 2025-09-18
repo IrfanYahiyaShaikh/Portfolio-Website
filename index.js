@@ -26,6 +26,6 @@ app.get("/resume", (req, res) => {
     res.render("resume.html");
 });
 
-app.get("/project", (req, res) => {
-    res.render("project.html");
+app.get("/contact", (req, res) => {
+    res.render("contact.html");
 });
