@@ -168,6 +168,10 @@
             justify-content: center;
             color: #f0f0f0;
         }
+        .certification li{
+             width: 300px;
+            height: 300px;
+        }
 
         @media(max-width:800px) {
             .hideonmobile-logo {
