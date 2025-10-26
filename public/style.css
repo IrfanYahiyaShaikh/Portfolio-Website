@@ -191,4 +191,14 @@
                 font-size:1rem;
             }
         }
-  
+  .btn-primary{
+    border-style: var(--tw-border-style);
+    background-color: var(--color-picto-primary);
+    color: var(--color-white);
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: .5s;
+    border-width: 0;
+    transition-duration: .5s;
+  }
