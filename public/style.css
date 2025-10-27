@@ -172,7 +172,7 @@ h1 {
 
 p {
     display: flex;
-    color: #f0f0f0;
+    color:#555;
 }
 
 .certification li {
@@ -318,3 +318,230 @@ h2 {
   transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(238, 9, 121, 0.4);
 }
+/* Contact Section */
+#contact {
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Title */
+.contact-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  font-size: 1rem;
+  color: #f4b400;
+  margin: 12px 0 6px;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ff6a00;
+  box-shadow: 0 0 8px rgba(255, 106, 0, 0.3);
+}
+
+/* Button Styling */
+.submit-btn {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.submit-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(238, 9, 121, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #contact {
+    padding: 0 20px;
+  }
+
+  .submit-btn {
+    align-self: center;
+  }
+}
+.success-message {
+  display: none;
+  color: #28a745;
+  font-weight: 600;
+  margin-top: 15px;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.success-message.show {
+  display: block;
+  opacity: 1;
+}
+#about {
+  background: #f8f9fa;
+  padding: 100px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  border-radius: 15px;
+  padding: 50px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease all;
+}
+
+.about-container:hover {
+  transform: translateY(-5px);
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0f2027;
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: 3px solid #ff8c00;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.about-heading {
+  color: #222;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.about-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.what-i-do h4 {
+  color: #ff8c00;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.what-i-do ul {
+  list-style-type: "⚡ ";
+  padding-left: 20px;
+}
+
+.what-i-do li {
+  margin: 10px 0;
+  color: #444;
+  font-size: 1rem;
+}
+
+.skills-section {
+  margin-top: 30px;
+}
+
+.highlight {
+  color: #ff8c00;
+  font-weight: 600;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.skill-card {
+  background: #fff8f0;
+  border: 1px solid #ffd699;
+  border-radius: 12px;
+  padding: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(255, 165, 0, 0.1);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(255, 165, 0, 0.25);
+}
+
+.skill-card h5 {
+  color: #ff8c00;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.connect-text {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.05rem;
+  color: #333;
+  background: linear-gradient(90deg, #ff8c00, #ff3b3b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-container {
+  animation: fadeUp 1s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 30px;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+

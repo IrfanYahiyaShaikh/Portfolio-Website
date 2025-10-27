@@ -1,15 +1,17 @@
 <%- include("includes/header.html") %>
-    <form method="get" action="" style="margin: 20px 20px 20px;">
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Enter Your Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Enter Your Message</label>
-    <textarea type="text" class="form-control" id="exampleInputPassword1"></textarea>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+  <section id="contact">
+  <h2 class="contact-title">Contact Me</h2>
+  <form class="contact-form">
+    <label for="email">Enter Your Name</label>
+    <input type="text" id="email" placeholder="Your Name" required>
+
+    <label for="message">Enter Your Message</label>
+    <textarea id="message" rows="5" placeholder="Type your message..." required></textarea>
+
+    <button type="submit" class="submit-btn">Submit</button>
+     <p id="successMessage" class="success-message">✅ Message sent successfully!</p>
+  </form>
+</section>
 <br><br><br><br><br><br><br><br><br>
 <%- include("includes/footer.html") %>
  <script>
@@ -22,6 +24,21 @@
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none'
         }
+         const form = document.getElementById("contactForm");
+  const successMessage = document.getElementById("successMessage");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); 
+
+    
+    successMessage.classList.add("show");
+    form.reset();
+
+    // Hide message after 3 seconds
+    setTimeout(() => {
+      successMessage.classList.remove("show");
+    }, 3000);
+  });
     </script>
 </body>
 </html>
