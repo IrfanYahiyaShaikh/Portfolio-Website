@@ -1,80 +1,83 @@
 <%- include("includes/header.html") %>
-    <section id="about">
-  <div class="about-container">
-    <h2 class="section-title">About Me</h2>
-
-    <div class="about-content">
-      <h3 class="about-heading">
-        BSc IT Graduate | MERN Stack Developer | Full-Stack Enthusiast
-      </h3>
-
-      <p class="about-text">
-        I am a Bachelor of Science in Information Technology (BSc IT) graduate
-        with strong knowledge of MERN Stack Development (MongoDB, Express.js,
-        React.js, Node.js). Throughout my academic journey, I gained hands-on
-        experience in building dynamic, user-friendly, and scalable web
-        applications while also strengthening my problem-solving and logical
-        thinking skills.
-      </p>
-
-      <div class="what-i-do">
-        <h4>What I Do Best 💻</h4>
-        <ul>
-          <li>Develop full-stack web applications using MERN</li>
-          <li>Create responsive and interactive front-end designs with React.js</li>
-          <li>Build efficient back-end systems with Node.js and Express.js</li>
-          <li>Work with databases (MongoDB, MySQL) to handle data effectively</li>
-        </ul>
+  <section id="about">
+    <div class="about-container">
+      <div class="about-image" style="display: flex; align-items: center; justify-content: center;" data-aos="zoom-in">
+        <img src="IMG-20251028-WA0009.jpg" alt="Your Name">
       </div>
+      <h2 class="section-title">About Me</h2>
 
-      <div class="skills-section">
-        <p>
-          🌱 I’m passionate about continuous learning, exploring new technologies, 
-          and turning ideas into working solutions. Currently, I’m seeking opportunities 
-          to grow as a <span class="highlight">Full Stack Developer / Software Engineer</span> 
-          where I can contribute my skills while gaining real-world experience.
+      <div class="about-content">
+        <h3 class="about-heading">
+          BSc IT Graduate | MERN Stack Developer | Full-Stack Enthusiast
+        </h3>
+
+        <p class="about-text">
+          I am a Bachelor of Science in Information Technology (BSc IT) graduate
+          with strong knowledge of MERN Stack Development (MongoDB, Express.js,
+          React.js, Node.js). Throughout my academic journey, I gained hands-on
+          experience in building dynamic, user-friendly, and scalable web
+          applications while also strengthening my problem-solving and logical
+          thinking skills.
         </p>
 
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h5>Frontend</h5>
-            <p>HTML, CSS, JavaScript, React.js, Bootstrap</p>
-          </div>
-          <div class="skill-card">
-            <h5>Backend</h5>
-            <p>Node.js, Express.js</p>
-          </div>
-          <div class="skill-card">
-            <h5>Database</h5>
-            <p>MongoDB, MySQL</p>
-          </div>
-          <div class="skill-card">
-            <h5>Others</h5>
-            <p>Git/GitHub, VS Code, REST APIs</p>
+        <div class="what-i-do">
+          <h4>What I Do Best 💻</h4>
+          <ul>
+            <li>Develop full-stack web applications using MERN</li>
+            <li>Create responsive and interactive front-end designs with React.js</li>
+            <li>Build efficient back-end systems with Node.js and Express.js</li>
+            <li>Work with databases (MongoDB, MySQL) to handle data effectively</li>
+          </ul>
+        </div>
+
+        <div class="skills-section">
+          <p>
+            🌱 I’m passionate about continuous learning, exploring new technologies,
+            and turning ideas into working solutions. Currently, I’m seeking opportunities
+            to grow as a <span class="highlight">Full Stack Developer / Software Engineer</span>
+            where I can contribute my skills while gaining real-world experience.
+          </p>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h5>Frontend</h5>
+              <p>HTML, CSS, JavaScript, React.js, Bootstrap</p>
+            </div>
+            <div class="skill-card">
+              <h5>Backend</h5>
+              <p>Node.js, Express.js</p>
+            </div>
+            <div class="skill-card">
+              <h5>Database</h5>
+              <p>MongoDB, MySQL</p>
+            </div>
+            <div class="skill-card">
+              <h5>Others</h5>
+              <p>Git/GitHub, VS Code, REST APIs</p>
+            </div>
           </div>
         </div>
+
+        <p class="connect-text">
+          🤝 I’m excited to connect with professionals, mentors, and teams in the tech industry.
+          Let’s collaborate and build something impactful!
+        </p>
       </div>
-
-      <p class="connect-text">
-        🤝 I’m excited to connect with professionals, mentors, and teams in the tech industry. 
-        Let’s collaborate and build something impactful!
-      </p>
     </div>
-  </div>
-</section>
+  </section>
 
-    <script>
-        function showsidebar() {
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
+  <script>
+    function showsidebar() {
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
 
-        function hidesidebar() {
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-        }
-    </script>
-    <%- include("includes/footer.html") %>
-</body>
+    function hidesidebar() {
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+  <%- include("includes/footer.html") %>
+    </body>
 
-</html>
+    </html>
